@@ -1,2 +1,2 @@
 # exercitii_python
-Exercitii pentru invatare python
+Acest fisier contine exercitii de baza cu liste folosind limbajul Python. :)
