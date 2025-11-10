@@ -23,7 +23,7 @@
 
 # 5.Creează o mică aplicație care gestionează contacte (nume + număr de telefon).
 #Fiecare contact este un tuplu de forma (nume, telefon). Utilizatorul poate adăuga contacte până scrie „stop”
-#La final: Afișează toate contactele. Permite căutarea unui contact după nume. ordonează lista alfabetic după nume
+#La final: Afișează toate contactele. Permite căutarea unui contact după nume. 
 
 agenda=[]
 while True:
