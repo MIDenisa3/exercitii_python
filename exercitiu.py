@@ -165,3 +165,38 @@
 # sarcini_filtrate=[s for s in lista_sarcini if s.lower().startswith(litera)]
 # print("Sarcinile care incep cu litera ", litera, "sunt: ", sarcini_filtrate)
 
+#-------------------------------------------------------EXERCITII CU IF------------------------
+# Sistem de note:
+# Scrie un program care:
+# Primește o notă de la 0 la 100 de la utilizator.
+# Afișează calificativul: 90–100 → "Excelent", 75–89 → "Bine", 60–74 → "Suficient", <60 → "Insuficient". Dacă nota nu e între 0 și 100, afișează: "Nota invalida"
+
+x=input("Adauga un calificativ: ")
+x=int(x)
+if x < 0 or x > 100:
+    print("Nota invalida")
+elif x >= 90:
+    print("Excelent")
+elif x >= 75:
+    print("Bine") 
+elif x >= 60:
+    print("Suficient")
+else:
+    print("Insuficient")
+
+# Cere username și parola de la utilizator.
+# Dacă username e corect și parola corectă → "Autentificare reușită"
+# Dacă username e corect, dar parola greșită → "Parola incorectă"
+# Dacă username greșit → "Utilizator inexistent
+
+username="mihaela"
+parola="parolaputernica"
+
+try_username=input("Adauga username-ul: ")
+try_parola=input("Adauga parola: ")
+if try_username != username:
+    print("utilizator inexistent")
+elif try_parola != parola:
+    print("Parola incorecta")
+else:
+    print("Autentificare reusita!")
