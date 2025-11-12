@@ -16,3 +16,21 @@ doar_instagram=prieteni_instagram-prieteni_facebook
 print(doar_instagram)
 toti_prietenii=prieteni_facebook|prieteni_instagram
 print(toti_prietenii)
+
+# Creează un catalog de note pentru mai mulți elevi (cheie = nume, valoare = listă de note).
+# Calculează media fiecărui elev
+# Afișează elevul cu cea mai mare medie
+
+catalog={
+    "Popescu": [8, 9, 10],
+    "Amza":[6,10,5],
+    "Lica": [7, 9, 5]
+}
+
+for elev, nota in catalog.items():
+    medie=sum(nota)/len(nota)
+    print(f"{elev} are media {medie:.2f}")
+
+medii = {elev: sum(nota)/len(nota) for elev, nota in catalog.items()}
+cel_mai_bun = max(medii, key=medii.get)
+print(f"Elevul cu cea mai mare medie este {cel_mai_bun} ({medii[cel_mai_bun]:.2f})")
